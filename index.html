@@ -10,23 +10,87 @@
 
   <title>DoctorCare - NLW</title>
 </head>
-<body>
-  <header>
-    <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
-    <h1>Assistência médica simplificada para todos</h1>
-    <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
-    <button>
+<body onscroll="onScroll()" class="">
+  <nav class="">
+    <div class="wrapper">
+      <div class="nav">
+      <a class="logo" href="#">
+        <img id="logo" src="./assets/icons/logo.svg" alt="DoctorCare Logo">
+      </a>
+      <button onClick="closeMenu()" class="close-menu">
+        <img src="./assets/icons/close.svg" alt="Close menu icon">
+      </button>
+
+      <button onClick="openMenu()" class="open-menu">
+        <img id="menu-hamburger" src="./assets/icons/icon.svg" alt="Open menu button">
+      </button>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+        <button class="button">
+          <img src="./assets/icons/whatsapp-green.svg" alt="WhatsApp Logo">  
+          Agende sua consulta
+        </button>
+
+        <ul class="social-links">
+          <li>
+            <a target="_blank" href="https://facebook.com/tfronn">
+              <img src="./assets/icons/facebook.svg" alt="facebook icon">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="http://instagram.com/tfronn">
+              <img src="./assets/icons/instagram.svg" alt="instagram icon">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="http://youtube.com/diversifique">
+              <img src="./assets/icons/youtube.svg" alt="YouTube icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+     
+      </div>
+  </nav>
+
+  <header class="wrapper">
+    <h4>
+      BOAS-VINDAS A DOCTORCARE 👋
+    </h4>
+    <h1>
+      Assistência médica simplificada para todos
+    </h1>
+    <p>
+      Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.
+    </p>
+    <button class="main-button">
       <img src="./assets/button/whatsapp.svg" alt="WhatsApp icon">
-    AGENDE SUA CONSULTA</button>
-      <img src="./assets/images/image.svg" alt="Woman image">
-    <h3>+3.500</h3>
-    <p>Pacientes atendidos</p>
-    <h3>+15</h3>
-    <p>Especialistas disponíveis</p>
-    <h3>+10</h3>
-    <p>Anos no mercado</p>
+    AGENDE SUA CONSULTA
+    </button>
+      <img class="woman" src="./assets/images/image.png" alt="Woman image">
+
+    <div class="stats">
+      <div class="stat">
+        <h3>+3.500</h3>
+        <p>Pacientes atendidos</p>
+      </div>
+      <div class="stat">
+        <h3>+15</h3>
+         <p>Especialistas disponíveis</p>
+       </div>
+      <div class="stat">
+        <h3>+10</h3>
+        <p>Anos no mercado</p>
+      </div>
+    </div>
   </header>
   
-
+<script src="scripts.js"></script>
 </body>
 </html>
